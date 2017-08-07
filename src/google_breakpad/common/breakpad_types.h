@@ -27,15 +27,15 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
 
-/* breakpad_types.h: Precise-width types
- *
- * (This is C99 source, please don't corrupt it with C++.)
- *
- * This file ensures that types uintN_t are defined for N = 8, 16, 32, and
- * 64.  Types of precise widths are crucial to the task of writing data
- * structures on one platform and reading them on another.
- *
- * Author: Mark Mentovai */
+ /* breakpad_types.h: Precise-width types
+  *
+  * (This is C99 source, please don't corrupt it with C++.)
+  *
+  * This file ensures that types uintN_t are defined for N = 8, 16, 32, and
+  * 64.  Types of precise widths are crucial to the task of writing data
+  * structures on one platform and reading them on another.
+  *
+  * Author: Mark Mentovai */
 
 #ifndef GOOGLE_BREAKPAD_COMMON_BREAKPAD_TYPES_H__
 #define GOOGLE_BREAKPAD_COMMON_BREAKPAD_TYPES_H__
@@ -52,8 +52,8 @@
 #include <inttypes.h>
 
 typedef struct {
-  uint64_t high;
-  uint64_t low;
+	uint64_t high;
+	uint64_t low;
 } uint128_struct;
 
 typedef uint64_t breakpad_time_t;
